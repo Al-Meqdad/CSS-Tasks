@@ -1,0 +1,107 @@
+@import url('http://fonts.cdnfonts.com/css/regular');
+body{
+    margin:0;
+}
+
+/* Section and Card*/
+section{
+    margin:10% 30% 0 30%;
+}
+card{
+    color:white;
+    display:flex;
+    background: linear-gradient(150deg, #ffd400,#fac600 ,#f9bd1d,#f9bf1e,#ffb700);
+    padding:3% 3%;
+    flex-direction: row-reverse;
+    text-align: right; 
+    border-radius: 10q;
+    box-shadow: grey 0px 0px 30px;
+    gap:3em;
+}
+conent{
+    width:50%;
+}
+
+
+
+/* Title and Country*/
+ctitle{
+    font-size:6em;
+    font-family: 'Regular', sans-serif;
+    word-wrap: break-word;
+}
+
+#sign{
+    margin-right:0.3em;
+    display:table-caption;
+    font-size:0.17em;
+    border:1px solid;
+    padding: 0.1em 0.3em;
+}
+
+first{
+    display:block;
+}
+
+
+/* Paragraph and details  */
+
+information{
+    color:#fdf8a0;
+    font-family: cursive;
+}
+p{
+    color:#fde35f;
+    font-family: sans-serif;
+}
+/* Buttons */
+choice{
+    gap: 30px;
+    display: flex;
+    justify-content: right;
+    margin-right: 5%;
+}
+.np{
+    font-size:1em;
+    color:white;
+    background:transparent;
+    border:none;
+    cursor:pointer;
+    font-family: cursive;
+}
+
+.add{
+    color:white;
+    font-size:1em;
+    background-color:#f6d80a;
+    border-radius: 50q;
+    border:none;
+    padding:2%;
+    cursor:pointer;
+    font-family: cursive;
+}
+
+.np:hover,.add:hover  {
+    color:black;
+}
+.np:active,.add:active{
+    color:lightskyblue;
+}
+
+
+/* image*/
+img{
+    width:40%;
+    height:30em;
+    z-index:2;
+    border-radius: 10q;
+    box-shadow: grey 0px 0px 30px;
+    margin-top:-5em;
+    transition-property: margin;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+
+}
+img:hover{
+    margin-top:-6em;
+}
