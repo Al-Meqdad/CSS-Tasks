@@ -105,3 +105,15 @@ img{
 img:hover{
     margin-top:-6em;
 }
+@media only screen and (max-width: 1850px) {
+    section {margin: 10% 20% 0 20%;}	
+
+}
+@media only screen and (max-width: 1300px) {
+    section {margin: 10% 10% 0 10%;}	
+
+}
+@media only screen and (max-width: 900px) {
+    section {margin: 10% 5% 0 5%;}	
+
+}
