@@ -1,0 +1,159 @@
+body{
+    margin:0;
+}
+section{
+    margin: 5% 35% 0 35%;
+}
+.container{
+    display:flex;
+    width:100%;
+    background:white;
+    border:5px solid #ebeef5;
+    flex-direction: column;
+    padding:20px 10px 20px 30px;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+title{
+    display:inline-block;
+    font-size:1.4em;
+    font-family: monospace;
+    font-weight: bold;
+}
+.header button{
+    background:none;
+    border:none;
+    cursor:pointer;
+    color:lightgray;
+    font-size:1em;
+    font-family: monospace;
+}
+.header button icon{
+    display:block;
+    font-size:2em;
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+}
+.form .search{
+    width:70%;
+    display: flex;
+    flex-direction: row;
+
+}
+.form .search input{
+    width:-webkit-fill-available;
+    height: 50q;
+    border:none;
+    border-bottom: 3px solid lightgray;
+    font-size:1em;
+    margin-bottom:30px;
+}
+.members{
+    display:flex;
+    gap:10px;
+    width:70%;
+    flex-direction: column
+    ;
+}
+.shared{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    border:1.5px solid lightgray;
+    padding:10px;
+    border-radius:5q;
+}
+.shared label{
+    color:lightgray;
+  }
+
+
+.shared input {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    width: 2.15em;
+    height: 2.15em;
+    border: 0.15em solid lightgray;
+    border-radius: 1em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+  }
+ 
+
+  input[type="checkbox"]::before {
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em greenyellow;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  }
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+  .shared input:checked{
+    border-color: greenyellow;
+    
+  }
+ .shared input:checked + label{
+    color:black;
+ }
+
+
+ /* buttons*/
+ .buttons{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:50%;
+ }
+ .cancel{
+    background:none;
+    border:1px solid lightgray;
+    cursor:pointer;
+    color:lightgray;
+    font-size:1em;
+    font-family: sans-serif;
+    font-weight: bold;
+    width:150q;
+    height:45q;
+ }
+ .save{
+    font-family: sans-serif;
+    color:#dfeaff;
+    border:none;
+    cursor:pointer;
+    background:linear-gradient(45deg, #6db5ff, #7985ff);
+    font-size:1em;
+    font-family: sans-serif;
+    font-weight: bold;
+    width:150q;
+    height:45q;
+    box-shadow: lightgray 0 10px 20px;
+ }
+
+ @media only screen and (max-width: 1750px) {
+    section {margin: 5% 30% 0 30%;}	
+
+}
+@media only screen and (max-width: 1550px) {
+    section {margin: 5% 25% 0 25%;}	
+}
+@media only screen and (max-width: 1200px) {
+    section {margin: 5% 20% 0 20%;}	
+}
+@media only screen and (max-width: 900px) {
+    section {margin: 5% 15% 0 15%;}	
+}
