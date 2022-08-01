@@ -1,0 +1,174 @@
+body{
+    margin:0;
+    background-color: #fcf4ed;
+}
+section{
+    display:flex;
+    flex-direction: row;
+    margin: 5% 10% 0 10%;
+    box-shadow: grey 0 0 10px;
+}
+.container{
+    width:100%;
+    background:white;
+}
+img{
+    width:50%;
+}
+
+/* Sign in card title and information*/
+title{
+    display:block;
+    color:red;
+    text-align: center;
+    margin: 30px 0 100px 0;
+    height: 100q;
+    font-size:3em;
+    font-family: monospace;
+    font-weight: bold;
+}
+information{
+    font-family: sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    color:black;
+    font-size:1.5em;
+    margin-bottom: 100px;
+    gap:15px;
+}
+message{
+    color:grey;
+    font-size: 16px;
+}
+
+/*Sign in form*/
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+}
+form .inputs{
+    width:50%;
+    height: 50q;
+    border:1px solid grey;
+    padding:5px;
+    border-radius:5q;
+}
+.inputs input{
+    border:none;
+    width:-webkit-fill-available;
+    height: 30q;
+
+}
+holder{
+    display:block;
+    color:grey;
+    font-size:0.8em;
+}
+form input:nth-child(3){
+    width:50%;
+    height: 50q;
+    border:1px solid grey;
+}
+
+/*inputs*/
+.save{
+    display:flex;
+    width:50%;
+    justify-content: space-between;
+}
+.save .button_div{
+    display:flex;
+
+}
+.save .button_div button{
+    border:none;
+    background:none;
+    color:gray;
+    cursor: pointer;
+    transition-property: font-size;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+
+}
+mark{
+    display:flex;
+    background-color:#dbe1e6;
+    border-radius: 100%;
+    color:black;
+    font-size:0.8em;
+    width:15px;
+    align-self: center;
+    justify-content: center;
+}
+.save button:hover{
+    color:black;
+    font-size:1em;
+}
+.save div text{
+    color:#dadee1;
+    font-size: 1em;
+}
+.save div text:hover{
+    color:black;
+}
+.continue{
+    color:white;
+    background-color: #58a1f5;
+    width:50%;
+    border-radius: 5q;
+    height:50q;
+    border:none;
+    margin-bottom: 30px;
+    cursor:pointer;
+}
+.continue:hover{
+    background-color: blue;
+
+}
+
+/*footer*/
+.sign_up{
+    display:flex;
+    justify-content: center;
+    color:gray;
+}
+.sign_up button{
+    color:gray;
+    border:none;
+    background: none;
+    cursor:pointer;
+    transition-property: font-size;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+}
+.sign_up button:hover{
+    color:black;
+    font-size:1em;
+}
+footer text{
+    color:grey;
+    font-size:0.8em;
+    display: flex;
+    justify-content: center;
+    margin:200px 0 30px 0;
+}
+
+
+/* @media rule*/
+
+@media only screen and (max-width: 2050px) {
+    section {margin: 5% 5% 0 5%;}	
+
+}
+@media only screen and (max-width: 1650px) {
+    section {margin: 5% 2% 0 2%;}	
+
+}
+@media only screen and (max-width: 1350px) {
+    section {margin: 5% 1% 0 1%;}	
+
+}
